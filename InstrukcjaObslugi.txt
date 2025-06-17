@@ -1,0 +1,16 @@
+1.Żeby wykorzystać projekt potrzebujemy zainstalować wymaganę biblioteki do naszego środowiska, robimy to poprzez: 
+pip install -r requirements.txt
+2.Następnie aby uruchomić stronę potrzebujemy użyć komendy:
+cd Aplikacja-do-wykrywania-anomalii
+streamlit run app.py
+W terminalu Bash
+albo przy otworzonym folderze w edytorze kodu:
+python -m streamlit app.py 
+3.Teraz powinna nam się otworzyć lokalnie hostowana strona, na której możemy wgrać plik ( w folderze data załączonym w repozytorium, znajdują się testowe dane, które możemy wykorzystać)
+4. Po wgraniu pliku, powinny nam wyskoczyć dwa okienka, jedno z czystymi danymi wczytanymi z pliku, drugi z danymi po wstępnej obróbce (pozbyciu się pól pustych oraz NA)
+5. Następnie wybieramy jeden z trzech modeli, który zastosujemy aby przetestować czy w danych są anomalię, oraz określamy tak zwany "Contamination"/"Zanieczyszczenie" dla naszych danych
+6. Przeprowadzamy Wykrywanie wciskając guzik
+7. Powino nam wyskoczyć że proces się udał, oraz kolejne okienko z nową kolumną 1 dla anomali 0 dla normalnych danych
+8. I pod nim mamy dwie ostatnie funkcje czyli wizualizacje wykresami Scatter Plot i Box Plot
+Obie te wizualizacje możemy określać na wybranych przez nas kolumnach, w czym Box Plot zawszę będzie porównywał jedną wybraną kolumnę z kolumną anomalii
+9. To wszystko, dziękuje za przeczytanie instrukcji!
